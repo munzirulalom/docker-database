@@ -31,7 +31,7 @@ If Docker is not running, start the Docker service or open the Docker Desktop ap
 1. Navigate to the `docker-database/redis` directory.
 2. Run Docker Compose to start Redis and RedisInsight containers:
     ```bash
-    docker-compose up -d
+    docker compose up -d
     ```
 
     This command will download the necessary images, create containers, and start them in the background.
@@ -128,12 +128,12 @@ This will provide direct access to the Redis CLI for quick commands and queries.
 
 To stop the containers:
 ```bash
-docker-compose down
+docker compose down
 ```
 
 To restart the containers:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ---
