@@ -37,22 +37,22 @@ Each setup is self-contained within its directory and ready for deployment with 
 ## Available Databases
 
 ### 1. Redis
-- **Directory**: [`docker-database/redis`](./docker-database/redis)
+- **Directory**: [`docker-database/redis`](./redis)
 - **Management Tool**: RedisInsight
 - **Default Port**: 6379
-- [See full README](./docker-database/redis/README.md)
+- [See full README](./redis/README.md)
 
 ### 2. PostgreSQL
-- **Directory**: [`docker-database/postgresql`](./docker-database/postgresql)
+- **Directory**: [`docker-database/postgresql`](./postgresql)
 - **Management Tool**: Adminer
 - **Default Port**: 5432
-- [See full README](./docker-database/postgresql/README.md)
+- [See full README](./postgresql/README.md)
 
 ### 3. MySQL
-- **Directory**: [`docker-database/mysql`](./docker-database/mysql)
+- **Directory**: [`docker-database/mysql`](./mysql)
 - **Management Tool**: Adminer
 - **Default Port**: 3306
-- [See full README](./docker-database/mysql/README.md)
+- [See full README](./mysql/README.md)
 
 ---
 
@@ -98,9 +98,9 @@ docker compose up -d
 
 Each database has specific instructions for connecting to the database server and accessing web-based management tools:
 
-- [Redis README](./docker-database/redis/README.md)
-- [PostgreSQL README](./docker-database/postgresql/README.md)
-- [MySQL README](./docker-database/mysql/README.md)
+- [Redis README](./redis/README.md)
+- [PostgreSQL README](./postgresql/README.md)
+- [MySQL README](./mysql/README.md)
 
 Refer to the respective `README.md` files in each directory for detailed connection instructions.
 
