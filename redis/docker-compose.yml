@@ -3,7 +3,7 @@ services:
     image: redis:latest
     container_name: redis
     command: redis-server
-    restart: always
+    restart: no  # Prevent auto-start
     ports:
       - 6379:6379  # Expose Redis on host's port 6379
     networks:
@@ -14,7 +14,7 @@ services:
   redisinsight:
     image: redis/redisinsight:latest
     container_name: redisinsight
-    restart: always
+    restart: no  # Prevent auto-start
     ports:
       - 5540:5540  # Expose RedisInsight on host's port 5540
     networks:

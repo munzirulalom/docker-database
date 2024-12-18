@@ -2,7 +2,7 @@ services:
   postgres:
     image: postgres:latest
     container_name: postgres
-    restart: always
+    restart: no  # Prevent auto-start
     environment:
       POSTGRES_USER: admin       # Default username
       POSTGRES_PASSWORD: password  # Default password
@@ -17,7 +17,7 @@ services:
   adminer:
     image: adminer:latest
     container_name: adminer
-    restart: always
+    restart: no  # Prevent auto-start
     ports:
       - 8080:8080  # Expose Adminer on host's port 8080
     networks:
